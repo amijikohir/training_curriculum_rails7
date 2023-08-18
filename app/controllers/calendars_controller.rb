@@ -3,10 +3,6 @@ class CalendarsController < ApplicationController
   # １週間のカレンダーと予定が表示されるページ
   def index
     getWeek
-    @plans = Plan.all
-  end
-
-  def new
     @plan = Plan.new
   end
 
